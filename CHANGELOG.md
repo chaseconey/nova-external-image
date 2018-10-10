@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.0.3](https://github.com/chaseconey/nova-external-image/tree/0.0.3) (2018-10-10)
+[Full Changelog](https://github.com/chaseconey/nova-external-image/compare/0.0.2...0.0.3)
+
 ## [0.0.2](https://github.com/chaseconey/nova-external-image/tree/0.0.2) (2018-10-10)
 [Full Changelog](https://github.com/chaseconey/nova-external-image/compare/0.0.1...0.0.2)
 
