@@ -19,7 +19,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
     img {
         max-width: 6rem;
     }
