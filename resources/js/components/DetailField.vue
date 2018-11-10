@@ -2,7 +2,7 @@
     <panel-item :field="field">
         <div slot="value">
 
-            <img v-if="url" :src="url">
+            <img v-if="url" :src="url" :width="width">
 
             <span v-else>&mdash;</span>
         </div>
@@ -21,7 +21,11 @@
                 }
 
                 return this.field.value;
-            }
+            },
+
+            width(){
+                return this.field.width;
+            }              
         }
     }
 </script>
