@@ -1,6 +1,5 @@
 <template>
     <img class="external-image-thumbnail" v-if="url" :src="url" :width="width">
-
     <span v-else>&mdash;</span>
 </template>
 
