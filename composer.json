@@ -1,6 +1,6 @@
 {
-  "name": "chaseconey/nova-external-image",
-  "description": "A Laravel Nova field.",
+  "name": "claytonnarcis/nova-external-image-with-width",
+  "description": "A Laravel Nova field that applies image with with",
   "keywords": [
     "laravel",
     "nova"
@@ -17,7 +17,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Chaseconey\\ExternalImage\\FieldServiceProvider"
+        "ClaytonNarcis\\ExternalImage\\FieldServiceProvider"
       ]
     }
   },
