@@ -13,7 +13,6 @@ class ExternalImage extends Field
      */
     public $component = 'external-image';
 
-
     /**
      *
      * Add prefix to the image string provided

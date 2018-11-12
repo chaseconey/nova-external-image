@@ -248,7 +248,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['resourceName', 'field'],
@@ -262,7 +261,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return this.field.value;
         },
         width: function width() {
-            return this.field.width;
+            if (this.field.width) {
+                return this.field.width;
+            }
+
+            return 'auto';
         }
     }
 });
@@ -356,6 +359,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -370,7 +374,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return this.field.value;
         },
         width: function width() {
-            return this.field.width;
+            if (this.field.width) {
+                return this.field.width;
+            }
+
+            return 'auto';
         }
     }
 });

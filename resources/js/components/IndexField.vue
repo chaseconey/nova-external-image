@@ -17,8 +17,12 @@ export default {
         },
 
         width(){
-            return this.field.width;
-        }
+            if (this.field.width) {
+                return this.field.width;
+            }                
+            
+            return 'auto';
+        }              
     }
 }
 </script>

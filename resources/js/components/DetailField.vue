@@ -5,6 +5,7 @@
             <img v-if="url" :src="url" :width="width">
 
             <span v-else>&mdash;</span>
+
         </div>
     </panel-item>
 </template>
@@ -24,7 +25,11 @@
             },
 
             width(){
-                return this.field.width;
+                if (this.field.width) {
+                    return this.field.width;
+                }                
+                
+                return 'auto';
             }              
         }
     }
