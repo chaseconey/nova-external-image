@@ -1,5 +1,5 @@
 <template>
-    <img class="external-image-thumbnail" v-if="url" :src="url">
+    <img class="external-image-thumbnail" :style="{ width, height, borderRadius }" v-if="url" :src="url">
 
     <span v-else>&mdash;</span>
 </template>
@@ -15,7 +15,19 @@ export default {
             }
 
             return this.field.value;
-        }
+        },
+
+        width() {
+            return this.field.width + 'px' || 'auto';
+        },
+
+        height() {
+            return this.field.width + 'px' || 'auto';
+        },
+
+        borderRadius() {
+            return this.field.borderRadius + 'px' || '0';
+        },
     }
 }
 </script>

@@ -30,11 +30,47 @@ The field extends the `Laravel\Nova\Fields\Text` field, so all the usual methods
 
 ### Options
 
-#### Prefix
+##### Prefix
 
 Prepend the image field with a prefix path. This is useful if you don't store the absolute path of images, but instead point to a cdn.
 
 ```php
 ExternalImage::make('Image')
     ->prefix('https://example.com/'),
+```
+
+##### Width
+
+Set the width of the image  (in pixels).
+
+```php
+ExternalImage::make('Image')
+    ->width(32),
+```
+
+##### Height
+
+Set the height of the image (in pixels).
+
+```php
+ExternalImage::make('Image')
+    ->height(32),
+```
+
+##### Radius
+
+Set the border radius of the image (in pixels).
+
+```php
+ExternalImage::make('Image')
+    ->radius(32),
+```
+
+##### Avatar
+
+Set the image with avatar-like style (rounded and fixed height + width).
+
+```php
+ExternalImage::make('Image')
+    ->avatar(),
 ```
