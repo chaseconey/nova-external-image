@@ -74,3 +74,7 @@ Set the image with avatar-like style (rounded and fixed height + width).
 ExternalImage::make('Image')
     ->avatar(),
 ```
+
+### Search Avatar
+
+If you want the external image to act as an [Avatar](https://nova.laravel.com/docs/2.0/resources/fields.html#avatar-field) in the search box use `ExternalImageAsAvatar` instead of `ExternalImage`
