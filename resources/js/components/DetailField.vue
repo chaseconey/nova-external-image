@@ -2,7 +2,7 @@
     <panel-item :field="field">
         <div slot="value">
 
-            <img v-if="url" :src="url">
+            <img class="external-image-thumbnail" :style="{ width, height, borderRadius }" v-if="url" :src="url">
 
             <span v-else>&mdash;</span>
         </div>
@@ -11,17 +11,29 @@
 
 <script>
 
-    export default {
-        props: ['resource', 'resourceName', 'resourceId', 'field'],
+  export default {
+    props: ['resource', 'resourceName', 'resourceId', 'field'],
 
-        computed: {
-            url() {
-                if (this.field.prefix) {
-                    return `${this.field.prefix}${this.field.value}`;
-                }
-
-                return this.field.value;
-            }
+    computed: {
+      url () {
+        if (this.field.prefix) {
+          return `${this.field.prefix}${this.field.value}`
         }
-    }
+
+        return this.field.value
+      },
+      width () {
+        console.log(this.field)
+        return this.field.width + 'px' || 'auto'
+      },
+
+      height () {
+        return this.field.height + 'px' || 'auto'
+      },
+
+      borderRadius () {
+        return this.field.borderRadius + 'px' || '0'
+      },
+    },
+  }
 </script>
