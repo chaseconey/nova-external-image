@@ -22,7 +22,7 @@ export default {
         },
 
         height() {
-            return this.field.width + 'px' || 'auto';
+            return this.field.height + 'px' || 'auto';
         },
 
         borderRadius() {
