@@ -23,7 +23,6 @@
         return this.field.value
       },
       width () {
-        console.log(this.field)
         return this.field.width + 'px' || 'auto'
       },
 
