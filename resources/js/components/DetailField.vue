@@ -1,18 +1,18 @@
 <template>
-    <panel-item :field="field">
-        <div slot="value">
+    <PanelItem :index="index" :field="field">
+        <template #value>
 
             <img class="external-image-thumbnail" :style="{ width, height, borderRadius }" v-if="url" :src="url">
 
             <span v-else>&mdash;</span>
-        </div>
-    </panel-item>
+        </template>
+    </PanelItem>
 </template>
 
 <script>
 
   export default {
-    props: ['resource', 'resourceName', 'resourceId', 'field'],
+    props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
 
     computed: {
       url () {
