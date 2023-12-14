@@ -1,5 +1,9 @@
-Nova.booting((Vue, router) => {
-    Vue.component('index-external-image', require('./components/IndexField'));
-    Vue.component('detail-external-image', require('./components/DetailField'));
-    Vue.component('form-external-image', require('./components/FormField'));
+import IndexField from './components/IndexField'
+import DetailField from './components/DetailField'
+import FormField from './components/FormField'
+
+Nova.booting((app, store) => {
+  app.component('index-external-image', IndexField)
+  app.component('detail-external-image', DetailField)
+  app.component('form-external-image', FormField)
 })

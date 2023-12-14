@@ -1,9 +1,10 @@
 let mix = require('laravel-mix')
 
-mix.js('resources/js/field.js', 'dist/js')
-  .styles('resources/css/field.css', 'dist/css/field.css')
-  .webpackConfig({
-    resolve: {
-      symlinks: false
-    }
-  })
+require('./nova.mix')
+
+mix
+  .setPublicPath('dist')
+  .js('resources/js/field.js', 'js')
+  .vue({ version: 3 })
+  .css('resources/css/field.css', 'css')
+  .nova('chaseconey/nova-external-image')
